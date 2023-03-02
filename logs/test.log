@@ -1,0 +1,102 @@
+2023-03-01 13-08-09 INFO  Task_A_Testcase:L - Task_A_Testcase started....
+2023-03-01 13-08-09 INFO  Task_A_Testcase:L - Base URI : http://localhost:3000
+2023-03-01 13-08-09 INFO  Task_A_Testcase:L - Performing GET request for fetching all posts.
+2023-03-01 13-08-10 INFO  Task_A_Testcase:L - Performing GET request for fetching all posts.
+2023-03-01 13-08-10 INFO  Task_A_Testcase:L - Successfully fetched all the posts
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Storing titles of posts into list
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Parsing titles of all the posts
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Storing ids of posts into list
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Parsing ids of all the posts
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Storing ids of posts into list
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Parsing ids of all the posts
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Successfully stored title and body of posts into dictionary
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Post id = 1
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Fetching particular posts using id = 1
+2023-03-01 13-08-11 INFO  Task_A_Testcase:L - Successfully fetched data of posts =[
+  {
+    "id": 1,
+    "userid": 1,
+    "title": "API Automation - Updated",
+    "body": "This is a sample post created for API automation assignment"
+  }
+]
+2023-03-01 14-27-09 INFO  Task_D_Testcase:L - Base URI : http://localhost:3000
+2023-03-01 14-27-09 INFO  Task_D_Testcase:L - Performing PUT request for updating posts.
+2023-03-01 14-27-10 INFO  Task_D_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-01 14-27-10 INFO  Task_D_Testcase:L - Post id = 1
+2023-03-01 15-57-20 INFO  Task_A_Testcase:L - Task_A_Testcase started....
+2023-03-01 15-57-20 INFO  Task_A_Testcase:L - Base URI : http://localhost:3000
+2023-03-01 15-57-20 INFO  Task_A_Testcase:L - Performing GET request for fetching all posts.
+2023-03-01 15-57-21 INFO  Task_A_Testcase:L - Performing GET request for fetching all posts.
+2023-03-01 15-57-21 INFO  Task_A_Testcase:L - Successfully fetched all the posts
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Storing titles of posts into list
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Parsing titles of all the posts
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Storing ids of posts into list
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Parsing ids of all the posts
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Storing ids of posts into list
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Parsing body of all the posts
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Successfully stored title and body of posts into dictionary
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Post id = 1
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Fetching particular posts using id = 1
+2023-03-01 15-57-22 INFO  Task_A_Testcase:L - Successfully fetched data of posts =[
+  {
+    "id": 1,
+    "userid": 1,
+    "title": "API Automation - Updated",
+    "body": "This is a sample post created for API automation assignment"
+  }
+]
+2023-03-01 16-55-23 INFO  Task_B_Testcase:L - Base URI : http://localhost:3000
+2023-03-01 16-55-23 INFO  Task_B_Testcase:L - Performing GET request for fetching all users.
+2023-03-01 16-55-24 INFO  Task_B_Testcase:L - Performing GET request for fetching all users.
+2023-03-01 16-55-24 INFO  Task_B_Testcase:L - Performing GET request for fetching particular user using email.
+2023-03-01 16-55-24 INFO  Task_B_Testcase:L - User email = Sincere@april.biz
+2023-03-01 16-55-24 INFO  Task_B_Testcase:L - Successfully fetched user using email.
+2023-03-02 10-39-20 INFO  Task_C_Testcase:L - Base URI : http://localhost:3000
+2023-03-02 10-39-20 INFO  Task_C_Testcase:L - Performing POST request for creating new posts.
+2023-03-02 10-39-20 INFO  Task_C_Testcase:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-02 10-49-51 INFO  Task_C_Testcase:L - Base URI : http://localhost:3000
+2023-03-02 10-49-51 INFO  Task_C_Testcase:L - Performing POST request for creating new posts.
+2023-03-02 10-49-51 INFO  Task_C_Testcase:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-02 10-49-51 INFO  Task_C_Testcase:L - Successfully performed POST request to create new post.
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - retrieving id of new created post , id = 111
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - Post id = 111
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - Extracting title of new created post title = API Automation
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - Extracting body of new created post title = This is a sample post created for API automation assignment
+2023-03-02 10-49-52 INFO  Task_C_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-02 10-56-11 INFO  Task_C_Testcase:L - Base URI : http://localhost:3000
+2023-03-02 10-56-11 INFO  Task_C_Testcase:L - Performing POST request for creating new posts.
+2023-03-02 10-56-11 INFO  Task_C_Testcase:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-02 10-56-12 INFO  Task_C_Testcase:L - Successfully performed POST request to create new post.
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - retrieving id of new created post , id = 112
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Post id = 112
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Extracting title of new created post title = API Automation
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Extracting body of new created post title = This is a sample post created for API automation assignment
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-02 10-56-13 INFO  Task_C_Testcase:L - Successfully stored title and body of posts into dictionary
+2023-03-02 12-13-44 INFO  Task_C_Testcase:L - Base URI : http://localhost:3000
+2023-03-02 12-13-44 INFO  Task_C_Testcase:L - Performing POST request for creating new posts.
+2023-03-02 12-13-44 INFO  Task_C_Testcase:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Successfully performed POST request to create new post.
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - retrieving id of new created post , id = 101
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Post id = 101
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Extracting title of new created post title = API Automation
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Extracting body of new created post title = This is a sample post created for API automation assignment
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-02 12-13-45 INFO  Task_C_Testcase:L - Successfully stored title and body of posts into dictionary
+2023-03-02 12-34-16 INFO  Task_D_Testcase:L - Base URI : http://localhost:3000
+2023-03-02 12-34-16 INFO  Task_D_Testcase:L - Performing PUT request for updating posts.
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - retrieving id of new created post , id = 1
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Performing GET request for fetching particular post using id.
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Post id = 1
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Extracting title of new created post title = API Automation - Updated
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Extracting body of new created post body = This is a sample post created for API automation assignment
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Created dictionary object to store title and body of posts
+2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Successfully stored title and body of posts into dictionary
