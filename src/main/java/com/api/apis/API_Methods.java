@@ -1,7 +1,7 @@
 package com.api.apis;
 
-import com.api.CommonVariables.GlobalVars;
-import com.api.payload.PayloadReader;
+import com.api.commonVariables.GlobalVars;
+import com.api.utilities.PayloadReader;
 import com.aventstack.extentreports.Status;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -11,6 +11,7 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
+import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
 public class API_Methods extends GlobalVars {
@@ -20,14 +21,14 @@ public class API_Methods extends GlobalVars {
         return jsonPath;
     }
 
-    public  JsonPath getAllPosts(String URI, String resource){
+    public JsonPath getAllPosts(String URI, String resource){
         RestAssured.baseURI = URI;
         extentTest.log(Status.PASS,"Base URI : " +URI);
         extentTest.log(Status.PASS,"Performing GET request for fetching all "+resource+".");
         logger.info("Base URI : " +URI);
         logger.info("Performing GET request for fetching all "+resource+".");
 
-        String response =  given().log().all()
+        String response =  given()
                 .when().get(resource)
                 .then().assertThat().statusCode(200).extract().response().asString();
         extentTest.log(Status.PASS,"Successfully performed GET request for fetching all "+resource+".");
@@ -45,7 +46,7 @@ public class API_Methods extends GlobalVars {
         logger.info("Data for creating new post : Title | "+title+"Body | "+body);
 
         String response =  given().header("Content-Type","application/json")
-                .body(PayloadReader.createNewPost(title,body))
+                .body(PayloadReader.readCreatePostPayload(title,body))
                 .when().post(resource)
                 .then().assertThat().statusCode(201).extract().response().asString();
         extentTest.log(Status.PASS,"Successfully performed POST request to create new post.");
@@ -61,7 +62,7 @@ public class API_Methods extends GlobalVars {
         logger.info("Performing PUT request for updating posts.");
 
         String response = given().header("Content-Type","application/json")
-                .body(PayloadReader.updatePost(userId,id,title,body))
+                .body(PayloadReader.readUpdatePostPayload(userId,id,title,body))
                 .when().put(resource+"/"+id)
                 .then().assertThat().statusCode(200).extract().response().asString();
         return rawToJson(response);
@@ -231,5 +232,25 @@ public class API_Methods extends GlobalVars {
         String body = jsonPath.getString("body");
         extentTest.log(Status.PASS,"Extracting body of updated post body = " + body );
         logger.info("Extracting body of new created post body = " + body  );
+    }
+
+    public JsonPath deleteSpecificPostUsingID(String URI, String resource, int id) {
+        RestAssured.baseURI = URI;
+        extentTest.log(Status.PASS,"Base URI : " +URI);
+        extentTest.log(Status.PASS,"Performing delete request for deleting posts.");
+        logger.info("Base URI : " +URI);
+        logger.info("Performing delete request for deleting posts.");
+
+        String response = given().header("Content-Type","application/json")
+                .when().delete(resource+"/"+id)
+                .then().assertThat().statusCode(200).extract().response().asString();
+        extentTest.log(Status.PASS,"Endpoint for delete post : " +URI+"/"+resource+"/"+id);
+        logger.info("Endpoint for delete post : " +URI+"/"+resource+"/"+id);
+        extentTest.log(Status.PASS,"Deleted post id : " + id);
+        logger.info("Deleted post id : " + id);
+
+        extentTest.log(Status.PASS,"Successfully deleted post.");
+        logger.info("Successfully deleted post.");
+        return rawToJson(response);
     }
 }

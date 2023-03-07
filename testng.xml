@@ -4,9 +4,9 @@
     <listeners>
         <listener class-name="com.api.listeners.ITestListenerClass"></listener>
     </listeners>
-    <test name="Task_D_Testcase">
+    <test name="TC03_CreateNewPost">
         <classes>
-            <class name="com.api.testcases.Task_D_Testcase"></class>
+            <class name="com.api.testcases.TC_05_DeleteSpecificPost"></class>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,6 @@
 package com.api.utilities;
 
-import com.api.CommonVariables.GlobalVars;
+import com.api.commonVariables.GlobalVars;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,17 +22,6 @@ public class DataFileReader extends GlobalVars {
             throw new RuntimeException(e);}
     }
 
-    public String getBaseURI(){
-        return properties.getProperty("BaseURI");
-    }
-
-    public String getPostRes(){
-        return properties.getProperty("postResource");
-    }
-
-    public String getUserRes(){
-        return properties.getProperty("userResource");
-    }
     public String getEmail(){
         return properties.getProperty("email");
     }
@@ -51,8 +40,7 @@ public class DataFileReader extends GlobalVars {
     public String getUpdatedTitle(){
         return properties.getProperty("updated_title");
     }
-    public String getTCName(){
-        return properties.getProperty("tcname");
-    }
+
+    public String getPostPayloadFileName(){return properties.getProperty("postPayloadFileName");}
 
 }

@@ -100,3 +100,335 @@
 2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Extracting body of new created post body = This is a sample post created for API automation assignment
 2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Created dictionary object to store title and body of posts
 2023-03-02 12-34-17 INFO  Task_D_Testcase:L - Successfully stored title and body of posts into dictionary
+2023-03-03 11-38-17 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-03 11-38-18 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-03 11-38-18 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-03 11-38-19 INFO  GlobalVars:L - Successfully Performing GET request for fetching all posts.
+2023-03-03 11-38-19 INFO  GlobalVars:L - Successfully fetched all the posts
+2023-03-03 11-38-20 INFO  GlobalVars:L - Storing titles of posts into list
+2023-03-03 11-38-20 INFO  GlobalVars:L - Parsing titles of all the posts
+2023-03-03 11-38-20 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-03 11-38-20 INFO  GlobalVars:L - Parsing ids of all the posts
+2023-03-03 11-38-20 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-03 11-38-20 INFO  GlobalVars:L - Parsing body of all the posts
+2023-03-03 11-38-20 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-03 11-38-20 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-03 11-38-20 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-03 11-38-20 INFO  GlobalVars:L - Post id = 1
+2023-03-03 11-38-20 INFO  GlobalVars:L - Fetching particular posts using id = 1
+2023-03-03 11-38-20 INFO  GlobalVars:L - Successfully fetched data of posts =[
+  {
+    "id": 1,
+    "userid": 1,
+    "title": "API Automation - Updated",
+    "body": "This is a sample post created for API automation assignment"
+  }
+]
+2023-03-03 11-38-20 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] passed.
+2023-03-06 12-06-56 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 12-06-57 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 12-06-57 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 12-06-57 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 12-06-58 INFO  GlobalVars:L - Successfully performed POST request to create new post.
+2023-03-06 12-06-58 INFO  GlobalVars:L - retrieving id of new created post , id = 102
+2023-03-06 12-06-58 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 12-06-58 INFO  GlobalVars:L - Post id = 102
+2023-03-06 12-06-58 INFO  GlobalVars:L - Extracting title of new created post title = API Automation
+2023-03-06 12-06-58 INFO  GlobalVars:L - Extracting body of new created post | body = This is a sample post created for API automation assignment
+2023-03-06 12-06-58 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 12-06-58 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 12-06-58 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] passed.
+2023-03-06 12-35-29 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 12-35-30 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 12-35-30 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 12-35-30 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] failed.
+2023-03-06 12-37-18 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 12-37-18 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 12-37-18 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 12-37-20 INFO  GlobalVars:L - retrieving id of new created post , id = 1
+2023-03-06 12-37-20 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 12-37-20 INFO  GlobalVars:L - Post id = 1
+2023-03-06 12-37-20 INFO  GlobalVars:L - Extracting title of new created post title = API Automation - Updated
+2023-03-06 12-37-20 INFO  GlobalVars:L - Extracting body of new created post body = This is a sample post created for API automation assignment
+2023-03-06 12-37-20 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 12-37-20 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 12-37-20 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] passed.
+2023-03-06 13-33-16 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 13-33-16 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 13-33-16 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 13-33-18 INFO  GlobalVars:L - retrieving id of new created post , id = 1
+2023-03-06 13-33-18 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 13-33-18 INFO  GlobalVars:L - Post id = 1
+2023-03-06 13-33-18 INFO  GlobalVars:L - Extracting title of new created post title = API Automation - Updated
+2023-03-06 13-33-18 INFO  GlobalVars:L - Extracting body of new created post body = This is a sample post created for API automation assignment
+2023-03-06 13-33-18 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 13-33-18 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 13-33-18 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] passed.
+2023-03-06 14-25-05 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 14-25-05 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 14-45-27 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 14-45-28 INFO  GlobalVars:L - Base URI : null
+2023-03-06 14-45-28 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 14-45-28 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 14-49-46 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 14-49-46 INFO  GlobalVars:L - Base URI : null
+2023-03-06 14-49-46 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 14-49-47 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 14-59-46 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 14-59-46 INFO  GlobalVars:L - Base URI : null
+2023-03-06 14-59-46 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 14-59-47 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 15-49-13 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 15-49-14 INFO  GlobalVars:L - Base URI : null
+2023-03-06 15-49-14 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 15-49-14 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 16-24-15 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 16-24-15 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 16-24-15 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 16-24-16 INFO  GlobalVars:L - Successfully Performing GET request for fetching all posts.
+2023-03-06 16-24-16 INFO  GlobalVars:L - Successfully fetched all the posts
+2023-03-06 16-24-16 INFO  GlobalVars:L - Storing titles of posts into list
+2023-03-06 16-24-16 INFO  GlobalVars:L - Parsing titles of all the posts
+2023-03-06 16-24-16 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 16-24-16 INFO  GlobalVars:L - Parsing ids of all the posts
+2023-03-06 16-24-16 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 16-24-16 INFO  GlobalVars:L - Parsing body of all the posts
+2023-03-06 16-24-16 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 16-24-16 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 16-24-16 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 16-32-14 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 16-32-14 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 16-32-14 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 16-32-15 INFO  GlobalVars:L - Successfully Performing GET request for fetching all posts.
+2023-03-06 16-32-15 INFO  GlobalVars:L - Successfully fetched all the posts
+2023-03-06 16-32-16 INFO  GlobalVars:L - Storing titles of posts into list
+2023-03-06 16-32-16 INFO  GlobalVars:L - Parsing titles of all the posts
+2023-03-06 16-32-16 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 16-32-16 INFO  GlobalVars:L - Parsing ids of all the posts
+2023-03-06 16-32-16 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 16-32-16 INFO  GlobalVars:L - Parsing body of all the posts
+2023-03-06 16-32-16 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 16-32-16 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 16-32-16 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] failed.
+2023-03-06 17-11-40 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-11-41 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-11-41 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 17-11-42 INFO  GlobalVars:L - Successfully Performing GET request for fetching all posts.
+2023-03-06 17-11-42 INFO  GlobalVars:L - Successfully fetched all the posts
+2023-03-06 17-11-42 INFO  GlobalVars:L - Storing titles of posts into list
+2023-03-06 17-11-42 INFO  GlobalVars:L - Parsing titles of all the posts
+2023-03-06 17-11-42 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 17-11-42 INFO  GlobalVars:L - Parsing ids of all the posts
+2023-03-06 17-11-42 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 17-11-42 INFO  GlobalVars:L - Parsing body of all the posts
+2023-03-06 17-11-42 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-11-42 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-11-42 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-11-42 INFO  GlobalVars:L - Post id = 1
+2023-03-06 17-11-42 INFO  GlobalVars:L - Fetching particular posts using id = 1
+2023-03-06 17-11-42 INFO  GlobalVars:L - Successfully fetched data of posts =[
+  {
+    "id": 1,
+    "userid": 1,
+    "title": "API Automation - Updated",
+    "body": "This is a sample post created for API automation assignment"
+  }
+]
+2023-03-06 17-11-42 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] passed.
+2023-03-06 17-12-49 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-12-50 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-12-50 INFO  GlobalVars:L - Performing GET request for fetching all users.
+2023-03-06 17-12-50 INFO  GlobalVars:L - Successfully Performing GET request for fetching all users.
+2023-03-06 17-12-51 INFO  GlobalVars:L - Extracting name from json and storing into list
+2023-03-06 17-12-51 INFO  GlobalVars:L - Parsing names of all the users
+2023-03-06 17-12-51 INFO  GlobalVars:L - Extracting email from json and storing into list
+2023-03-06 17-12-51 INFO  GlobalVars:L - Parsing email of all the users
+2023-03-06 17-12-51 INFO  GlobalVars:L - Extracting address from json and storing into list
+2023-03-06 17-12-51 INFO  GlobalVars:L - Parsing address of all the users
+2023-03-06 17-12-51 INFO  GlobalVars:L - Extracting phone from json and storing into list
+2023-03-06 17-12-51 INFO  GlobalVars:L - Extracting phone from json and storing into list
+2023-03-06 17-12-51 INFO  GlobalVars:L - Performing GET request for fetching particular user using email.
+2023-03-06 17-12-51 INFO  GlobalVars:L - User email = Sincere@april.biz
+2023-03-06 17-12-51 INFO  GlobalVars:L - Successfully fetched user using email.
+2023-03-06 17-12-51 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC02_RetrieveListOfUsers] passed.
+2023-03-06 17-13-24 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-13-24 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] failed.
+2023-03-06 17-20-20 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-20-20 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] failed.
+2023-03-06 17-20-59 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-20-59 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-20-59 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 17-20-59 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 17-21-00 INFO  GlobalVars:L - Successfully performed POST request to create new post.
+2023-03-06 17-21-01 INFO  GlobalVars:L - retrieving id of new created post , id = 103
+2023-03-06 17-21-01 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-21-01 INFO  GlobalVars:L - Post id = 103
+2023-03-06 17-21-01 INFO  GlobalVars:L - Extracting title of new created post title = API Automation
+2023-03-06 17-21-01 INFO  GlobalVars:L - Extracting body of new created post | body = This is a sample post created for API automation assignment
+2023-03-06 17-21-01 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-21-01 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-21-01 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] passed.
+2023-03-06 17-23-24 INFO  GlobalVars:L - Task_A_Testcase started....
+2023-03-06 17-23-24 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-23-24 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 17-23-24 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 17-23-25 INFO  GlobalVars:L - Successfully performed POST request to create new post.
+2023-03-06 17-23-25 INFO  GlobalVars:L - retrieving id of new created post , id = 104
+2023-03-06 17-23-25 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-23-25 INFO  GlobalVars:L - Post id = 104
+2023-03-06 17-23-25 INFO  GlobalVars:L - Extracting title of new created post title = API Automation
+2023-03-06 17-23-25 INFO  GlobalVars:L - Extracting body of new created post | body = This is a sample post created for API automation assignment
+2023-03-06 17-23-25 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-23-25 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-23-25 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] passed.
+2023-03-06 17-25-16 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-25-16 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-25-16 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 17-25-16 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 17-25-17 INFO  GlobalVars:L - Successfully performed POST request to create new post.
+2023-03-06 17-25-17 INFO  GlobalVars:L - retrieving id of new created post , id = 105
+2023-03-06 17-25-17 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-25-17 INFO  GlobalVars:L - Post id = 105
+2023-03-06 17-25-18 INFO  GlobalVars:L - Extracting title of new created post title = API Automation
+2023-03-06 17-25-18 INFO  GlobalVars:L - Extracting body of new created post | body = This is a sample post created for API automation assignment
+2023-03-06 17-25-18 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-25-18 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-25-18 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] passed.
+2023-03-06 17-26-57 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-26-57 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] failed.
+2023-03-06 17-27-42 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-27-42 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-27-42 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 17-27-44 INFO  GlobalVars:L - retrieving id of new created post , id = 1
+2023-03-06 17-27-44 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-27-44 INFO  GlobalVars:L - Post id = 1
+2023-03-06 17-27-44 INFO  GlobalVars:L - Extracting title of new created post title = API Automation - Updated
+2023-03-06 17-27-44 INFO  GlobalVars:L - Extracting body of new created post body = This is a sample post created for API automation assignment
+2023-03-06 17-27-44 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-27-44 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-27-44 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] passed.
+2023-03-06 17-32-13 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-32-13 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-32-13 INFO  GlobalVars:L - Performing GET request for fetching all posts.
+2023-03-06 17-32-14 INFO  GlobalVars:L - Successfully Performing GET request for fetching all posts.
+2023-03-06 17-32-14 INFO  GlobalVars:L - Successfully fetched all the posts
+2023-03-06 17-32-15 INFO  GlobalVars:L - Storing titles of posts into list
+2023-03-06 17-32-15 INFO  GlobalVars:L - Parsing titles of all the posts
+2023-03-06 17-32-15 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 17-32-15 INFO  GlobalVars:L - Parsing ids of all the posts
+2023-03-06 17-32-15 INFO  GlobalVars:L - Storing ids of posts into list
+2023-03-06 17-32-15 INFO  GlobalVars:L - Parsing body of all the posts
+2023-03-06 17-32-15 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-32-15 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-32-15 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-32-15 INFO  GlobalVars:L - Post id = 1
+2023-03-06 17-32-15 INFO  GlobalVars:L - Fetching particular posts using id = 1
+2023-03-06 17-32-15 INFO  GlobalVars:L - Successfully fetched data of posts =[
+  {
+    "id": 1,
+    "userid": 1,
+    "title": "API Automation - Updated",
+    "body": "This is a sample post created for API automation assignment"
+  }
+]
+2023-03-06 17-32-15 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC01_RetrieveListOfPosts] passed.
+2023-03-06 17-35-02 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-35-03 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-35-03 INFO  GlobalVars:L - Performing GET request for fetching all users.
+2023-03-06 17-35-04 INFO  GlobalVars:L - Successfully Performing GET request for fetching all users.
+2023-03-06 17-35-04 INFO  GlobalVars:L - Extracting name from json and storing into list
+2023-03-06 17-35-04 INFO  GlobalVars:L - Parsing names of all the users
+2023-03-06 17-35-04 INFO  GlobalVars:L - Extracting email from json and storing into list
+2023-03-06 17-35-04 INFO  GlobalVars:L - Parsing email of all the users
+2023-03-06 17-35-04 INFO  GlobalVars:L - Extracting address from json and storing into list
+2023-03-06 17-35-04 INFO  GlobalVars:L - Parsing address of all the users
+2023-03-06 17-35-04 INFO  GlobalVars:L - Extracting phone from json and storing into list
+2023-03-06 17-35-04 INFO  GlobalVars:L - Extracting phone from json and storing into list
+2023-03-06 17-35-04 INFO  GlobalVars:L - Performing GET request for fetching particular user using email.
+2023-03-06 17-35-04 INFO  GlobalVars:L - User email = Sincere@april.biz
+2023-03-06 17-35-04 INFO  GlobalVars:L - Successfully fetched user using email.
+2023-03-06 17-35-04 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC02_RetrieveListOfUsers] passed.
+2023-03-06 17-42-45 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-42-45 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-42-45 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 17-42-45 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 17-42-45 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] failed.
+2023-03-06 17-43-30 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-43-30 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-43-30 INFO  GlobalVars:L - Performing POST request for creating new posts.
+2023-03-06 17-43-30 INFO  GlobalVars:L - Data for creating new post : Title | API AutomationBody | This is a sample post created for API automation assignment
+2023-03-06 17-43-31 INFO  GlobalVars:L - Successfully performed POST request to create new post.
+2023-03-06 17-43-32 INFO  GlobalVars:L - retrieving id of new created post , id = 106
+2023-03-06 17-43-32 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-43-32 INFO  GlobalVars:L - Post id = 106
+2023-03-06 17-43-32 INFO  GlobalVars:L - Extracting title of new created post title = API Automation
+2023-03-06 17-43-32 INFO  GlobalVars:L - Extracting body of new created post | body = This is a sample post created for API automation assignment
+2023-03-06 17-43-32 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-43-32 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-43-32 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC03_CreateNewPost] passed.
+2023-03-06 17-54-07 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-54-08 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-54-08 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 17-54-08 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] failed.
+2023-03-06 17-54-43 INFO  GlobalVars:L - Testcase started....
+2023-03-06 17-54-43 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 17-54-43 INFO  GlobalVars:L - Performing PUT request for updating posts.
+2023-03-06 17-54-45 INFO  GlobalVars:L - retrieving id of new created post , id = 1
+2023-03-06 17-54-45 INFO  GlobalVars:L - Performing GET request for fetching particular post using id.
+2023-03-06 17-54-45 INFO  GlobalVars:L - Post id = 1
+2023-03-06 17-54-45 INFO  GlobalVars:L - Extracting title of new created post title = API Automation - Updated
+2023-03-06 17-54-45 INFO  GlobalVars:L - Extracting body of new created post body = This is an updated sample post created for API automation assignment
+2023-03-06 17-54-45 INFO  GlobalVars:L - Created dictionary object to store title and body of posts
+2023-03-06 17-54-45 INFO  GlobalVars:L - Successfully stored title and body of posts into dictionary
+2023-03-06 17-54-45 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC04_UpdateSpecificPost] passed.
+2023-03-06 18-09-49 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-09-49 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-09-49 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-09-50 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-09-50 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-11-48 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-11-49 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-11-49 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-11-50 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-11-50 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-14-09 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-14-09 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-14-09 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-14-10 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] failed.
+2023-03-06 18-15-12 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-15-12 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-15-12 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-15-13 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-15-13 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-19-43 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-19-43 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-19-43 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-19-44 INFO  GlobalVars:L - Endpoint for delete post : posts
+2023-03-06 18-19-44 INFO  GlobalVars:L - Deleted post id : 103
+2023-03-06 18-19-44 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-19-44 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-22-29 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-22-29 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-22-29 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-22-30 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] failed.
+2023-03-06 18-23-45 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-23-45 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-23-45 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-23-46 INFO  GlobalVars:L - Endpoint for delete post : http://localhost:3000posts/102
+2023-03-06 18-23-46 INFO  GlobalVars:L - Deleted post id : 102
+2023-03-06 18-23-46 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-23-46 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-24-40 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-24-40 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-24-40 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-24-41 INFO  GlobalVars:L - Endpoint for delete post : http://localhost:3000posts/101
+2023-03-06 18-24-41 INFO  GlobalVars:L - Deleted post id : 101
+2023-03-06 18-24-41 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-24-41 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.
+2023-03-06 18-25-32 INFO  GlobalVars:L - Testcase started....
+2023-03-06 18-25-32 INFO  GlobalVars:L - Base URI : http://localhost:3000
+2023-03-06 18-25-32 INFO  GlobalVars:L - Performing delete request for deleting posts.
+2023-03-06 18-25-33 INFO  GlobalVars:L - Endpoint for delete post : http://localhost:3000/posts/100
+2023-03-06 18-25-33 INFO  GlobalVars:L - Deleted post id : 100
+2023-03-06 18-25-33 INFO  GlobalVars:L - Successfully deleted post.
+2023-03-06 18-25-33 INFO  GlobalVars:L - Testcase [TestClass name=class com.api.testcases.TC_05_DeleteSpecificPost] passed.

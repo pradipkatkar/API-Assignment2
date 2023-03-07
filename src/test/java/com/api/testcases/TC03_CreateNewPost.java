@@ -1,28 +1,23 @@
 package com.api.testcases;
 
-import com.api.CommonVariables.GlobalVars;
+import com.api.commonVariables.GlobalVars;
 import com.api.apis.API_Methods;
+import com.api.utilities.ConfigFileReader;
 import com.api.utilities.DataFileReader;
 import com.aventstack.extentreports.Status;
 import io.restassured.path.json.JsonPath;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import java.util.Dictionary;
-import java.util.Hashtable;
-
-public class Task_C_Testcase extends GlobalVars {
+public class TC03_CreateNewPost extends GlobalVars {
 
     API_Methods api_methods = new API_Methods();
     @Test
-    public void taskC(){
-        Logger logger = LogManager.getLogger(Task_C_Testcase.class);
-        GlobalVars.setLogger(logger);
+    public void createNewPost(){
+        ConfigFileReader configFileReader = new ConfigFileReader();
         testDataReader = new DataFileReader("TC_03_TestData");
-        extentTest.info("Task_C_Testcase started....");
+        extentTest.info("TC03_CreateNewPost started....");
         extentTest.log(Status.PASS,"Performing post request to create new post.");
-        JsonPath jsonPath = api_methods.createNewPost(testDataReader.getBaseURI(),testDataReader.getPostRes(),testDataReader.getTitle(),testDataReader.getBody());
+        JsonPath jsonPath = api_methods.createNewPost(configFileReader.getBaseURI(),endPoints.getPostEndPoint(),testDataReader.getTitle(),testDataReader.getBody());
 
 
        int id = api_methods.retrieveIdOfCratedPost(jsonPath);

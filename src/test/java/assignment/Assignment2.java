@@ -1,12 +1,11 @@
 package assignment;
 
-import com.api.CommonVariables.GlobalVars;
+import com.api.commonVariables.GlobalVars;
 import com.api.apis.API_Methods;
+import com.api.utilities.ConfigFileReader;
 import com.api.utilities.DataFileReader;
-import com.api.payload.PayloadReader;
 import io.restassured.path.json.JsonPath;
 import org.apache.logging.log4j.*;
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 
@@ -16,6 +15,7 @@ import java.util.List;
 
 public class Assignment2 extends GlobalVars {
     DataFileReader testDataReader = new DataFileReader("TC_01_TestData");
+    ConfigFileReader configFileReader = new ConfigFileReader();
     API_Methods api_methods = new API_Methods();
    private static Logger logger = LogManager.getLogger(Assignment2.class.getName());
         @Test
@@ -24,18 +24,19 @@ public class Assignment2 extends GlobalVars {
            // System.out.println(testDataReader.getId());
            // System.out.println(testDataReader.getTCName());
            // System.out.println("Todays Date = "+timeStamp);
-            System.out.println("Assignment 2");
-            logger.info("Logger successfull implemented");
-            logger.info("Good job Logger successfull");
-            logger.info("Better job Logger successfull");
+           // System.out.println("Assignment 2");
+           // logger.info("Logger successfull implemented");
+            //logger.info("Good job Logger successfull");
+            //logger.info("Better job Logger successfull");
             //Payload.createNewPost("abc","");
-            JSONObject user = PayloadReader.createNewUser();
-            System.out.println(user);
+           // JSONObject user = PayloadReader.createNewUser();
+           // System.out.println(user);
+            System.out.println(configFileReader.getBaseURI());
         }
 
         @Test
         public void taskA(){
-            JsonPath jsonPath = api_methods.getAllPosts(testDataReader.getBaseURI(), testDataReader.getPostRes());
+            JsonPath jsonPath = api_methods.getAllPosts(configFileReader.getBaseURI(),endPoints.getPostEndPoint());
             
            /* String title =  jsonPath.getString("title");
             String[] titles = PageLevelMethods.splitString(title);*/
@@ -75,7 +76,7 @@ public class Assignment2 extends GlobalVars {
 
     @Test
     public void taskB(){
-        JsonPath jsonPath = api_methods.getAllPosts(testDataReader.getBaseURI(), testDataReader.getUserRes());
+        JsonPath jsonPath = api_methods.getAllPosts(configFileReader.getBaseURI(), endPoints.getUserEndPoint());
         
         String name =  jsonPath.getString("name");
         System.out.println(name);
@@ -93,7 +94,7 @@ public class Assignment2 extends GlobalVars {
 
     @Test
     public void taskC(){
-        JsonPath jsonPath = api_methods.createNewPost(testDataReader.getBaseURI(),testDataReader.getPostRes(),testDataReader.getTitle(),testDataReader.getBody());
+        JsonPath jsonPath = api_methods.createNewPost(configFileReader.getBaseURI(),endPoints.getPostEndPoint(),testDataReader.getTitle(),testDataReader.getBody());
 
         String id = jsonPath.getString("id");
         System.out.println("id = "+id);
@@ -104,7 +105,7 @@ public class Assignment2 extends GlobalVars {
 
     @Test
     public void taskD(){
-        JsonPath jsonPath =  API_Methods.updatePost(testDataReader.getBaseURI(),testDataReader.getPostRes(),testDataReader.getId(),testDataReader.getUserId(),testDataReader.getUpdatedTitle(),testDataReader.getBody());
+        JsonPath jsonPath =  API_Methods.updatePost(configFileReader.getBaseURI(),endPoints.getPostEndPoint(),testDataReader.getId(),testDataReader.getUserId(),testDataReader.getUpdatedTitle(),testDataReader.getBody());
 
         int id =  jsonPath.getInt("id");
         System.out.println("Id = " +id);

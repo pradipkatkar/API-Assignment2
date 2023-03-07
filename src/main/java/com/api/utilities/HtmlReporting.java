@@ -1,6 +1,6 @@
 package com.api.utilities;
 
-import com.api.CommonVariables.GlobalVars;
+import com.api.commonVariables.GlobalVars;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
